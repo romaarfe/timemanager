@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimeManager</class>
+ <widget class="QDialog" name="TimeManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TimeManager</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>MARCAR PONTO</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="Line" name="line">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset theme="list-remove"/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset theme="list-add"/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Entrada</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Break Manhã</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Almoço</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Break Tarde</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Saída</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>XXXXX</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>XXXXX</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable</set>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>TIME MANAGER</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QTableWidget" name="tableWidget_2">
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset theme="x-office-calendar"/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset theme="document-open-recent"/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Horas</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Horas</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Horas</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Horas</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Horas</string>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string> Fechar</string>
+       </property>
+       <property name="icon">
+        <iconset theme="application-exit"/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Selecione um mês</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Janeiro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fevereiro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Março</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Abril</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Maio</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Junho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Julho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Agosto</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Setembro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Outubro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Novembro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dezembro</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string> Gerar TXT</string>
+       </property>
+       <property name="icon">
+        <iconset theme="document-open"/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
